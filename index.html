@@ -274,6 +274,16 @@
             color: white;
         }
         
+        .btn-success {
+        background-color: #00cc66 !important; /* xanh lá tùy ý */
+        border-color: #00cc66 !important;
+        }
+
+        .btn-success:hover {
+        background-color: #00994d !important;
+        border-color: #00994d !important;
+        }
+
         .btn-primary:hover {
             background-color: #218838;
         }
@@ -397,7 +407,7 @@
 
     <div class="container">
         <div class="header">
-            <h1>🏪 Quản lý nhập kho</h1>
+            <h1>🏪 Quản lý hàng bán</h1>
             <p>Hệ thống quản lý hàng hóa các cửa hàng</p>
         </div>
 
@@ -541,64 +551,30 @@
     </div>
     <div class="category-summary">11 sản phẩm - Nhấn để mở rộng</div>
     <div class="category-content">
-        <div class="product-item"><span class="product-name">PMS</span><input type="number" class="product-input" data-product="PMS" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">PML</span><input type="number" class="product-input" data-product="PML" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">GA</span><input type="number" class="product-input" data-product="GA" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">BO</span><input type="number" class="product-input" data-product="BO" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">XXH</span><input type="number" class="product-input" data-product="XXH" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">XXĐ</span><input type="number" class="product-input" data-product="XXĐ" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">BR</span><input type="number" class="product-input" data-product="BR" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">NAM</span><input type="number" class="product-input" data-product="NAM" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">THOM</span><input type="number" class="product-input" data-product="THOM" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">BCX</span><input type="number" class="product-input" data-product="BCX" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">APMS</span><input type="number" class="product-input" data-product="PMS" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">APML</span><input type="number" class="product-input" data-product="PML" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">AGA</span><input type="number" class="product-input" data-product="GA" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">ABO</span><input type="number" class="product-input" data-product="BO" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">AXXH</span><input type="number" class="product-input" data-product="XXH" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">AXXĐ</span><input type="number" class="product-input" data-product="XXĐ" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">ABR</span><input type="number" class="product-input" data-product="BR" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">ANAM</span><input type="number" class="product-input" data-product="NAM" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">ATHOM</span><input type="number" class="product-input" data-product="THOM" min="0" value="0" onclick="event.stopPropagation()"></div>
+        <div class="product-item"><span class="product-name">ABCX</span><input type="number" class="product-input" data-product="BCX" min="0" value="0" onclick="event.stopPropagation()"></div>
     </div>
 </div>
 
-    <!-- ➕ Tùy chỉnh -->
-<div class="category" onclick="toggleCategory(this)">
-    <div class="category-header">
-        <h3>⚙️ Tùy chỉnh</h3>
-        <span class="category-toggle">▼</span>
-    </div>
-    <div class="category-summary">34 sản phẩm - Nhấn để mở rộng</div>
-    <div class="category-content">
-        <div class="product-item"><span class="product-name">BOL</span><input type="number" class="product-input" data-product="BOL" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">GAL</span><input type="number" class="product-input" data-product="GAL" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">HS</span><input type="number" class="product-input" data-product="HS" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">HSDB</span><input type="number" class="product-input" data-product="HSDB" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">XXHL</span><input type="number" class="product-input" data-product="XXHL" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">XXĐL</span><input type="number" class="product-input" data-product="XXĐL" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">BRL</span><input type="number" class="product-input" data-product="BRL" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">ML</span><input type="number" class="product-input" data-product="ML" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">TC</span><input type="number" class="product-input" data-product="TC" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">TTC</span><input type="number" class="product-input" data-product="TTC" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">BSC</span><input type="number" class="product-input" data-product="BSC" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">PMT</span><input type="number" class="product-input" data-product="PMT" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">PML</span><input type="number" class="product-input" data-product="PML" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">CNL</span><input type="number" class="product-input" data-product="CNL" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">SLM</span><input type="number" class="product-input" data-product="SLM" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">KGLX</span><input type="number" class="product-input" data-product="KGLX" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">RC</span><input type="number" class="product-input" data-product="RC" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">BOS</span><input type="number" class="product-input" data-product="BOS" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">XXHS</span><input type="number" class="product-input" data-product="XXHS" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">BRS</span><input type="number" class="product-input" data-product="BRS" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">CNS</span><input type="number" class="product-input" data-product="CNS" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">PMS</span><input type="number" class="product-input" data-product="PMS" min="0" value="0" onclick="event.stopPropagation()"></div>
-        <div class="product-item"><span class="product-name">GAS</span><input type="number" class="product-input" data-product="GAS" min="0" value="0" onclick="event.stopPropagation()"></div>
-    </div>
-</div>
-
+   
 
             <!-- Tóm tắt -->
             <div class="summary" id="summary" style="display: none;">
                 <h3>📊 Tóm tắt nhập kho</h3>
                 <div id="summaryContent"></div>
             </div>
-
+ 
             <!-- Nút điều khiển -->
            <div class="buttons">
-                <button class="btn btn-primary" onclick="updateSummary()">📋 Xem tóm tắt</button>
-                <button class="btn btn-success" onclick="sendToGoogleSheets()">📤 Gửi lên Google Sheets</button>
+                <button class="btn btn-success" onclick="sendToGoogleSheets()">📤 GỬI</button>
                 <button class="btn btn-danger" onclick="clearAll()">🗑️ Xóa tất cả</button>
             </div>
         </div>
@@ -754,7 +730,7 @@
 
     console.log("📤 Payload gửi:", payload);
 
-    fetch("https://script.google.com/macros/s/AKfycbw5BLNfgWNZZbpnvhrrQMf3aYHJsI04XJ8fhpGg_fs1dR2UThCWJiTXLQ1Nqt1I4lFy/exec", {
+    fetch("https://script.google.com/macros/s/AKfycby9NLN4d6qXPeVBvSKjwsBCtQuCVExhdulj_vqV01i2JrMhOiBemAAUHvvHymgZw9eh/exec", {
     method: "POST",
     mode: "no-cors", // ⚠ Nếu đang chạy trên localhost / GitHub Pages, thêm dòng này để tránh lỗi preflight
     headers: {
